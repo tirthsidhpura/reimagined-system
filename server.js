@@ -48,10 +48,10 @@ app.post('/valdata',async (req,res)=>{
     let j = req.body;
     console.log(j.linkone);
         let cr=[];
-        const pages = await readPdfText(j.linkone);
+        const pages = await readPdfText('https://www.gtu.ac.in/uploads/S2022/BE/3170717.pdf');
         // console.log(pages[0]?.lines);
         cr.push(pages[0]?.lines)
-        const pages2 = await readPdfText(j.linktwo);
+        const pages2 = await readPdfText('https://www.gtu.ac.in/uploads/S2022/BE/3170717.pdf');
         cr.push(pages2[0]?.lines)
         fs.writeFile('data.txt', JSON.stringify(cr), (err) => {
             // throws an error, you could also catch it here
