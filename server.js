@@ -46,7 +46,7 @@ app.get('/j',(req,res)=>{
 app.post('/valdata',async (req,res)=>{
   try {
     let j = req.body;
-    console.log(req.body);
+    console.log(j.linkone);
         let cr=[];
         const pages = await readPdfText(j.linkone);
         // console.log(pages[0]?.lines);
