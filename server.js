@@ -29,7 +29,10 @@ const pdfread = () => {
         });
       });
 }
-
+app.get('/',(req,res)=>{
+  
+    res.send('HELLO WORLD')
+})
 app.use(express.static('public'))
 app.get('/j',(req,res)=>{
     let jsono = {
