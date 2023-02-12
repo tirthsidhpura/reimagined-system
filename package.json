@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@now/node"
+    }
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
