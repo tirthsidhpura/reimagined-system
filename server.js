@@ -173,7 +173,7 @@ app.post('/valdata',async (req,res)=>{
             
         });
   } catch (error) {
-    console.log(err)
+    console.log(error)
   }
     
     
